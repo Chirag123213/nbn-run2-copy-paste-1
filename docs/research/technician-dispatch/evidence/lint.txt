@@ -1,0 +1,6 @@
+$ pnpm -r lint
+Scope: 2 of 3 workspace projects
+frontend lint$ eslint src/
+backend lint$ eslint src/
+backend lint: Done
+frontend lint: Done
