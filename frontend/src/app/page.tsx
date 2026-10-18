@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Welcome to the app',
+  description: 'Trial Two technician dispatch',
 }
 
 export default function LandingPage() {
@@ -14,14 +14,17 @@ export default function LandingPage() {
           {process.env.NEXT_PUBLIC_APP_NAME ?? 'App'}
         </h1>
         <p className="max-w-md text-lg text-zinc-600 dark:text-zinc-400">
-          Your app description goes here. Edit{' '}
-          <code className="rounded bg-zinc-100 px-1 py-0.5 font-mono text-sm dark:bg-zinc-800">
-            src/app/page.tsx
-          </code>{' '}
-          to get started.
+          Trial Two technician dispatch: record the job, find a compatible technician and
+          schedule the visit.
         </p>
       </div>
-      <div className="flex gap-4">
+      <div className="flex flex-wrap justify-center gap-4">
+        <Link
+          href="/technician-dispatch"
+          className="inline-flex items-center justify-center rounded-md bg-black px-6 py-2.5 text-sm font-medium text-white shadow transition-colors hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+        >
+          Technician dispatch
+        </Link>
         <Link
           href="/auth/signin"
           className="inline-flex items-center justify-center rounded-md bg-black px-6 py-2.5 text-sm font-medium text-white shadow transition-colors hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
